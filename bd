@@ -1,0 +1,13 @@
+<?php
+$server = 'localhost';
+$user = 'student';
+$password = '156721';
+$dbase = mysql_connect($server,$user, $password);
+if (!$dbase)
+die('Ошибка подключения к серверу баз данных'.mysql_error());
+$database = 'my_bd';
+mysql_select_db($database)
+or die ("Невозможно выбрать базу данных".mysql_error());
+
+
+?>
